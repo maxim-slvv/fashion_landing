@@ -231,11 +231,12 @@ img {
     width: 50%;
     height: 100%;
     background: url(../img/avone-styles/1.jpg) 50% 100%/550px no-repeat;
+    margin-right: 25px;
 }
 .style-right {
     width: 50%;
     height: 100%;
-    background: url(../img/avone-styles/2.jpg) 50% 0%/515px no-repeat;
+    background: url(../img/avone-styles/2.jpg) 0% 0%/515px no-repeat;
     position: relative;
 }
 .style-right::after {
@@ -243,7 +244,30 @@ img {
     content: '';
     bottom: 0;
     right: 0;
-    width: 270px;
+    width: 250px;
     height: 303px;
-    background: #fff url(../img/avone-styles/3.jpg) 50% 100%/227px no-repeat;
+    background: #fff url(../img/avone-styles/3.jpg) 100% 100%/227px no-repeat;
 }
+.style__link {
+    position: absolute;
+    z-index: 2;
+    bottom: 50px;
+    right: 260px;
+}
+.style__link::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+.style__link:hover::after{
+    background-color: #d064bf;
+}
+.style__link:hover {
+    color: #d064bf;
+}
+
