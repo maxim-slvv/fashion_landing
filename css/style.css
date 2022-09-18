@@ -38,14 +38,14 @@ img {
     padding: 0px 5px;
     margin: 0 auto;
 }
-.btn_primary {
+.btn-primary {
     color: white;
     font-size: 18px;
     font-weight: 500;
-    border-color: #22262A;
+    background-color: #22262A;
 }
 .btn-primary:hover {
-    background-color: #f03fd5;
+    background-color: #d064bf;
 }
 /*header*/
 .header {
@@ -84,4 +84,72 @@ img {
     padding: 425px 0 100px;
     background: url(../img/logo.jpg) no-repeat;
     background-size: cover;
+}
+.banner {
+    width: 460px;
+    margin-left: auto;
+}
+.banner_text {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+.banner__trend {
+    font-size: 80px;
+    line-height: 120px;
+}
+.banner-link-wrap {
+    margin-top: 25px;
+}
+.banner__link {
+    width: 150px;
+    padding: 8px 25px;
+    margin-right: 20px;
+}
+.banner__link:last-child {
+    margin-right: 0px;
+}
+
+/*categoty*/
+
+.section {
+    padding: 115px 0 0;
+}
+.category {
+    display: grid;
+    grid-template-areas: "img1 img1 img4 img4"
+                         "img2 img3 img4 img4";
+    gap: 25px;
+}
+.category__link {
+    min-height: 265px;
+}
+.category__link:nth-child(1) {
+    grid-area: img1; 
+    background: url(../img/category/1.jpg) no-repeat;
+}
+.category__link:nth-child(2) {
+    grid-area: img2; 
+    background: url(../img/category/2.jpg) no-repeat;
+}
+.category__link:nth-child(3) {
+    grid-area: img3; 
+    background: url(../img/category/3.jpg) no-repeat;
+}
+.category__link:nth-child(4) {
+    grid-area: img4; 
+    background: url(../img/category/4.jpg) no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+.category__name {
 }
