@@ -47,7 +47,7 @@ img {
 .btn-primary:hover {
     background-color: #d064bf;
 }
-/*header*/
+/*==================header==================*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -78,7 +78,7 @@ img {
     color: #d064bf;
 }
 
-/*Banner-wrap*/
+/*==================Banner-wrap==================*/
 
 .banner-wrap {
     padding: 425px 0 100px;
@@ -111,7 +111,7 @@ img {
     margin-right: 0px;
 }
 
-/*categoty*/
+/*==================categoty==================*/
 
 .section {
     padding: 115px 0 0;
@@ -121,13 +121,11 @@ img {
     grid-template-areas: "img1 img1 img4 img4"
                          "img2 img3 img4 img4";
     gap: 25px;
-    
 }
 .category__link { /*сюда будем позиционировать блок с затемнением*/
     position: relative;
     min-height: 285px;
     cursor: pointer;
-
 }
 .category__link:hover::before{ /*блок с затемнением*/
     position: absolute;
@@ -137,7 +135,6 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgb(0 0 0 /50%);
- 
 }
 .category__link:nth-child(1) {
     grid-area: img1; 
@@ -155,7 +152,6 @@ img {
     grid-area: img4; 
     background: url(../img/category/4.jpg) 50% 0%/cover no-repeat;
 }
-
 .category__name { /*создали блок с названием категории теперь у каждого элемента он есть*/
     position: absolute;
     bottom: 25px;
@@ -165,15 +161,13 @@ img {
     font-weight: 500;
     opacity: 0; /*скрываем для всех элементов до тех пор пока не наведемся на определенный элемент*/
     background-color: #fff;
-   
 }
-
 .category__link:hover .category__name { /*при наведении на LINK его ребенок NAME будет OPACITY*/
     opacity: 1;
     transition: 0.4s ease;
 }
 
-/*new product*/
+/*==================new product==================*/
 
 .section__title {
     margin-bottom: 15px;
@@ -193,8 +187,6 @@ img {
     justify-content: space-between;
 }
 .new-product {
-    /* display: flex;
-    flex-direction: column; */
     width: 24%; /*блок это 100%*/
 }
 .new-product__img {
@@ -220,7 +212,7 @@ img {
     color: #CF2929;
 }
 
-/*style*/
+/*==================style==================*/
 
 .style {
     display: flex;
@@ -262,12 +254,165 @@ img {
     right: 0px;
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: #22262A;
+    cursor: pointer;
 }
 .style__link:hover::after{
     background-color: #d064bf;
+    cursor: pointer;
 }
 .style__link:hover {
     color: #d064bf;
+    cursor: pointer;
 }
 
+/*==================collection-wrap==================*/
+
+.collection-wrap {
+    margin-top: 125px;
+    padding: 425px 0 100px;
+    background: url(../img/footer.jpg) no-repeat;
+    background-size: cover;
+}
+.collection-banner {
+    width: 500px;
+    margin-left: 0;
+}
+
+/*==================footer==================*/
+
+.footer-main {
+    background-color: #F2F8FC;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #22262A;
+    
+}
+.footer {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #22262A;
+    margin-bottom: 17px;
+}
+.footer__text {
+    max-width: 405px;
+}
+.footer__left-1 {
+    width: 565px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 41px;
+}
+.footer__left-2 {
+    width: 565px;
+    display: flex;
+    flex-direction: column;
+}
+.left-2__loc,
+.left-2__contact {
+    margin-bottom: 16px;
+}
+.left-2__loc {
+    margin-left: 3px;
+}
+.footer__right-2 {
+    display: flex;
+    margin-top: 30px;
+    padding-left: 0px;
+}
+.right-2__shop {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 33.333%;
+}
+.right-2__help {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 41.333%;
+}
+.right-2__about {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 25%;
+}
+.right-2__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #22262A;
+}
+.footer__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+.footer__email {
+    display: flex;
+    padding-left: 25px;
+    height: 45px;
+    width: 480px;
+    overflow: hidden;
+}
+.footer__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 43px;
+    font-weight: 700;
+    width: 80px;
+    height: 45px;
+    color: #22262A;
+    background-color: white;
+    max-width: 50px;
+}
+.right-2__links {
+    display: flex;
+}
+.right-2__links a:not(:last-child) {
+    margin-bottom: 21px;
+}
+.right-2__links h4 {
+    margin-bottom: 27px;
+}
+.fa {
+    font-size: 15px;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.fa-map-marker {
+    padding-right: 50px;
+}
+
+/*==================footer-copyright==================*/
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7F5F8;
+    height: 93px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #22262A;
+}
+.footer__right a:hover,
+.left-2__contact:hover,
+.left-2__email:hover
+ {
+    color: #d064bf;
+    text-decoration: underline;
+}
