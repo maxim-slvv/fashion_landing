@@ -183,10 +183,12 @@ img {
 
 .new-product-wrap {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
 }
 .new-product {
+    /* display: flex;
+    flex-direction: column; */
     width: 24%; /*блок это 100%*/
 }
 .new-product__img {
@@ -194,5 +196,11 @@ img {
 }
 .new-product__brand {
     display: block;
-    background-color: rgb(255, 0, 0);
+    font-weight: 300;
 }
+.new-product__link {
+    display: block;
+    margin: 5px 0px;
+    font-weight: 600;
+}
+.new-product__link:hover
