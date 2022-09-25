@@ -205,7 +205,7 @@ img {
     color: #d064bf;
 }
 .new-product__price_old {
-    margin-right: 30px;
+    margin-right: 10px;
     text-decoration: line-through;
 }
 .new-product__price_new {
@@ -315,6 +315,8 @@ img {
     display: flex;
     flex-direction: column;
 }
+
+
 .left-2__loc,
 .left-2__contact {
     margin-bottom: 16px;
@@ -322,6 +324,11 @@ img {
 .left-2__loc {
     margin-left: 3px;
 }
+.fa-map-marker {
+    padding-right: -15px;
+}
+
+
 .footer__right-2 {
     display: flex;
     margin-top: 30px;
@@ -392,9 +399,20 @@ img {
     height: 15px;
     margin-right: 5px;
 }
-.fa-map-marker {
-    padding-right: 50px;
+.footer__left-icon .fa:hover {
+    color: #d064bf;
+    cursor: pointer;
+    transition: ease-in 0.3s;
 }
+.footer__right a:hover,
+.left-2__contact:hover,
+.left-2__email:hover
+ {
+    color: #d064bf;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 /*==================footer-copyright==================*/
 
@@ -408,11 +426,4 @@ img {
     font-size: 15px;
     line-height: 22px;
     color: #22262A;
-}
-.footer__right a:hover,
-.left-2__contact:hover,
-.left-2__email:hover
- {
-    color: #d064bf;
-    text-decoration: underline;
 }
