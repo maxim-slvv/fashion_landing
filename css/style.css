@@ -73,6 +73,10 @@ img {
 .header-user__item:last-child {
     margin-right: 0;
 }
+.material-icons-outlined {
+    background-color: inherit;
+}
+
 .header a:hover,
 .header button:hover {
     color: #d064bf;
@@ -412,7 +416,6 @@ img {
     text-decoration: underline;
     cursor: pointer;
 }
-
 
 /*==================footer-copyright==================*/
 
